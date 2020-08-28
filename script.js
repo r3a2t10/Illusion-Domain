@@ -50,7 +50,7 @@ viewer = new PANOLENS.Viewer( {
   cameraFov: 120
 } );
 
-viewer.OrbitControls.noZoom = true;
+//viewer.OrbitControls.noZoom = true;
 viewer.add( panorama ); 
 
 document.querySelector( '#btn_next' ).addEventListener( 'click', function(){
@@ -73,7 +73,8 @@ viewer_v = new PANOLENS.Viewer({
   controlButtons: ['fullscreen','video'],
   autoRotate: true,
   autoRotateSpeed: 0.5, 
-  autoRotateActivationDuration: 2000
+  autoRotateActivationDuration: 2000,
+  cameraFov: 120
 });
 
 viewer_v.OrbitControls.noZoom = true;
