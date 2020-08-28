@@ -1,27 +1,132 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>CodePen - Image Panorama - Custom Container</title>
-  <link rel="stylesheet" href="./style.css">
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>幻境 Illusion Domain</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap" rel="stylesheet">
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body id="page-top" unselectable="on" style="-moz-user-select:none;-webkit-user-select:none;" onselectstart="return false;">
+        <div id="pg"></div>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container d-flex h-100 align-items-center">
+                <div class="mx-auto text-center">
+                    <h1 style="font-size: small;">Illusion Domain</h1>
+                    <h1 class="mx-auto my-0 text-uppercase">幻&nbsp;&nbsp;&nbsp;境</h1>
+                    <h2 class="text-white-50 mx-auto mt-2 mb-5"></h2>
+                    <h2 class="text-white-50 mx-auto mt-2 mb-5" style="font-weight: normal; font-size: 12px; line-height: 20px;">「幻境」已不是一個地點的再現或是城市街景的重塑，
+                        而是由機器學習超速地、耗能地使用電力、電子晶片與演算法構築的運算影像，
+                        一個脫離身體感且非物質性的超速幻境。</h2>
+                    <!--a class="btn btn-primary js-scroll-trigger" href="#about">Get Started</a-->
+                </div>
+            </div>
+        </header>
+        
+        <!-- About-->
+        <section class="about-section text-center" id="about">
+            <div id="ct"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h6 class="text-white mb-4">創作理念</h6>
+                        <p class="text-white-50" style="font-weight: normal; font-size: 12px; line-height: 20px;">
+                            當全人類迎接第五代移動通訊技術，外加摩爾定律後半場的硬體革新沒有減速的跡象，其科技進展不僅壓縮了時間與空間單位，更應證了保羅‧維希留（Paul Virillio）所預言的超速世界——「二十世紀最終不過是十九世紀諸重大災難的無限擴張與加速」。網際網路與物聯網帶動資料庫資料量以指數擴張，加乘了巨量演算法運算，我們在生存在持續運算與耗能的加速社會之中。「即時」已成為當代的現實：即時運算、即時預測、即時監控，無不是高速中央處理器與獨立顯示卡的計算與燃燒的電能所生之產物。而當影像的生成進入了控制論第三波的自我組織階段，人類在此已不再是「影像本身」的生產者，而是「影像製造機器」的訓練者。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Projects-->
+        <section class="projects-section bg-light" id="projects">
+            <div class="container">
+                <!-- Featured Project Row-->
+                
+                <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+                    <div class="col-xl-8 col-lg-7">
+                        <div id="ct_image"></div>
+                        <!--img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" alt=""-->
+                    </div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-center text-lg-left">
+                            <h6>幻境 - 環景圖</h6>
+                            <p class="text-black-50 mb-0" style="font-weight: normal; font-size: 12px; line-height: 20px;">Illusion Domain - 360 degree panorama</p>
+                            <hr class="d-none d-lg-block mb-0 ml-0" />
+                            <br>
+                            <a class="btn btn-primary js-scroll-trigger" id="btn_next">Generate another</a>
+                        
+                        </div>
+                    </div>
+                </div>
 
-</head>
-<body>
+                <!-- Project One Row-->
+                <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+                    <div class="col-lg-6">
+                        <img class="img-fluid" id="imgClickAndChange1" src="./images/out1.png" alt="" />
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-left">
+                                    <h4 class="text-white">Misty</h4>
+                                    <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
+                                    <hr class="d-none d-lg-block mb-0 ml-0" />
+                                    <br>
+                                    <a class="btn btn-primary js-scroll-trigger" onclick="changeImage1()">Generate another</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Two Row-->
+                <div class="row justify-content-center no-gutters">
+                    <div class="col-lg-6">
+                        <img class="img-fluid" id="imgClickAndChange2" src="./viewpoints/out1.png" alt="" />
+                    </div>
+                    <div class="col-lg-6 order-lg-first">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-right">
+                                    <h4 class="text-white">Mountains</h4>
+                                    <p class="mb-0 text-white-50">Another example of a</p>
+                                    <hr class="d-none d-lg-block mb-0 mr-0" />
+                                    <br>
+                                    <a class="btn btn-primary js-scroll-trigger" onclick="changeImage2()">Generate another</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Signup-->
+        <section class="signup-section" id="signup">
+        </section>
+        <!-- Footer-->
+        <footer class="footer bg-black small text-center text-white-50"><div class="container">Copyright © Your Website 2020</div></footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
 
-<!-- partial:index.partial.html -->
-<div id="text_container">
-  <h3 style="color: azure;">幻 境</h3>
-  <h5 style="color: azure;">Illusion Domain</h5>
-</div>
-<div id="container"></div>
-<div id="container2">
-  <button id="btn_next" class="button">Next</button>
-</div>
-<!--button id="btn_change_size">Change Container Size</button-->
-<div id="progress"></div>
-<!-- partial -->
-<script src='https://pchen66.github.io/js/three/three.min.js'></script>
-<script src='https://rawgit.com/pchen66/panolens.js/dev/build/panolens.min.js'></script><script  src="./script.js"></script>
-
-</body>
+        <!-- ################################### -->
+        <script src='https://pchen66.github.io/js/three/three.min.js'></script>
+        <script src='https://rawgit.com/pchen66/panolens.js/dev/build/panolens.min.js'></script>
+        <script  src="./script.js"></script>
+    </body>
 </html>
