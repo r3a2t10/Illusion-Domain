@@ -1,6 +1,6 @@
 # Illusion Domain 2020
 ### AI generated Google StreetView
-#### [demo website](/r3a2t10.github.io/illusion-domain/)
+Demo Link: r3a2t10.github.io/illusion-domain/
 [web template](https://startbootstrap.com/themes/grayscale/)
 
 project created 2020.08
