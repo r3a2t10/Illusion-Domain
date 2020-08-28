@@ -65,8 +65,8 @@ var panorama_v, viewer_v, ct;
 
 ct = document.querySelector( '#ct' );
 
-panorama_v = new PANOLENS.VideoPanorama( 'http://flimshaw.github.io/Valiant360/videos/overpass-2k.mp4', { autoplay: true } );
-//panorama_v = new PANOLENS.VideoPanorama( './video.mp4', { autoplay: true } );
+//panorama_v = new PANOLENS.VideoPanorama( 'http://flimshaw.github.io/Valiant360/videos/overpass-2k.mp4', { autoplay: true } );
+panorama_v = new PANOLENS.VideoPanorama( './video.mp4', { autoplay: true } );
 
 viewer_v = new PANOLENS.Viewer({
   container: ct,
