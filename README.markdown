@@ -3,7 +3,6 @@
 ###### Demo Link: https://r3a2t10.github.io/Illusion-Domain/
 [web template](https://startbootstrap.com/themes/grayscale
 
-- Illusion Domain
 - AI generated art
 - Google Street View
 
