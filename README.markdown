@@ -1,4 +1,7 @@
 # Illusion Domain 2020
-https://startbootstrap.com/themes/grayscale/
+### AI generated Google StreetView
+web template: https://startbootstrap.com/themes/grayscale/
+
+2020.08
 
 
