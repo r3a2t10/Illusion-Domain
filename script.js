@@ -43,7 +43,7 @@ createPanorama();
 
 viewer = new PANOLENS.Viewer( { 
   container: container, 
-  controlButtons: ['fullscreen'],
+  //controlButtons: ['fullscreen'],
   autoRotate: true,
   autoRotateSpeed: 0.5, 
   autoRotateActivationDuration: 2000,
@@ -70,7 +70,7 @@ panorama_v = new PANOLENS.VideoPanorama( './video.mp4', { autoplay: true } );
 
 viewer_v = new PANOLENS.Viewer({
   container: ct,
-  controlButtons: ['fullscreen','video'],
+  //controlButtons: ['fullscreen','video'],
   autoRotate: true,
   autoRotateSpeed: 0.5, 
   autoRotateActivationDuration: 2000,
