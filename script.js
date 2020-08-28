@@ -47,6 +47,8 @@ viewer = new PANOLENS.Viewer( {
   autoRotateSpeed: 0.5, 
   autoRotateActivationDuration: 2000
 } );
+viewer.getCamera().fov = 30;
+viewer.getCamera().updateProjectionMatrix();
 viewer.add( panorama ); 
 
 document.querySelector( '#btn_next' ).addEventListener( 'click', function(){
@@ -58,3 +60,10 @@ document.querySelector( '#btn_next' ).addEventListener( 'click', function(){
   viewer.setPanorama( panorama );
   viewer.add( panorama );
 }, false );
+
+//====================
+var panorama_v, viewer_v;
+
+panorama_v = new PANOLENS.VideoPanorama( 'asset/textures/video/ClashofClans.mp4', { autoplay: true } );
+viewer_v = new PANOLENS.Viewer();
+viewer_v.add( panorama_v );
