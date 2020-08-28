@@ -47,7 +47,7 @@ viewer = new PANOLENS.Viewer( {
   autoRotate: true,
   autoRotateSpeed: 0.5, 
   autoRotateActivationDuration: 2000,
-  cameraFov: 120
+  cameraFov: 100
 } );
 
 //viewer.OrbitControls.noZoom = true;
@@ -65,8 +65,8 @@ var panorama_v, viewer_v, ct;
 
 ct = document.querySelector( '#ct' );
 
-//panorama_v = new PANOLENS.VideoPanorama( 'http://flimshaw.github.io/Valiant360/videos/overpass-2k.mp4', { autoplay: true } );
-panorama_v = new PANOLENS.VideoPanorama( './video.mp4', { autoplay: true } );
+panorama_v = new PANOLENS.VideoPanorama( 'http://flimshaw.github.io/Valiant360/videos/overpass-2k.mp4', { autoplay: true } );
+//panorama_v = new PANOLENS.VideoPanorama( './video.mp4', { autoplay: true } );
 
 viewer_v = new PANOLENS.Viewer({
   container: ct,
@@ -74,7 +74,7 @@ viewer_v = new PANOLENS.Viewer({
   autoRotate: true,
   autoRotateSpeed: 0.5, 
   autoRotateActivationDuration: 2000,
-  cameraFov: 120
+  cameraFov: 100
 });
 
 viewer_v.OrbitControls.noZoom = true;
