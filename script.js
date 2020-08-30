@@ -9,6 +9,9 @@ function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max)) + 1;
 }
 
+changeImage1()
+changeImage2()
+
 // progressElement
 //=============================================================
 progressElement = document.getElementById( 'pg' );
